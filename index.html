@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Sensei&family=Brittany&display=swap');
         body {
             font-family: 'Sensei', sans-serif;
-            background: url('background.jpg') no-repeat center center fixed;
+            background: url('background.jpg') no-repeat center center;
             background-size: cover;
             margin: 0;
             padding: 0;
@@ -16,11 +16,12 @@
             justify-content: center;
             align-items: center;
             overflow: auto;
+            min-height: 100vh;
         }
         .container {
             width: 90%;
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.85);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -67,15 +68,16 @@
             font-size: 14px;
             color: #555;
         }
-        .contact {
+        .contacts {
             margin-top: 20px;
-            font-size: 14px;
-            color: #333;
+            font-size: 16px;
+            text-align: center;
         }
-        .contact a {
+        .contacts a {
+            display: block;
             color: #d9534f;
             text-decoration: none;
-            font-weight: bold;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -173,12 +175,16 @@
             </div>
         </div>
 
+
         <div class="footer">Оформление торта оплачивается отдельно, цена зависит от сложности декора 😊</div>
         
-        <div class="contact">
-            Для заказа звоните по номеру: <a href="tel:+77001234567">+7 700 123 45 67</a><br>
-            Пишите в WhatsApp: <a href="https://wa.me/77001234567">WhatsApp</a><br>
-            Наш Instagram: <a href="https://instagram.com/tut_dessert" target="_blank">@tut_dessert</a>
+        <div class="contacts">
+            <p>Для заказа звоните:</p>
+            <a href="tel:+77001234567">+7 700 123 45 67</a>
+            <p>Пишите в WhatsApp:</p>
+            <a href="https://wa.me/77001234567" target="_blank">WhatsApp</a>
+            <p>Следите за нами в Instagram:</p>
+            <a href="https://www.instagram.com/tut_dessert" target="_blank">Instagram</a>
         </div>
     </div>
 </body>
