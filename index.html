@@ -19,20 +19,25 @@
             min-height: 100vh;
         }
         .container {
-    background: url('background copy.jpg') no-repeat center;
-    background-size: cover;
-    width: 90%;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
+            width: 90%;
+            max-width: 500px;
+            background: url('container-background.jpg') no-repeat center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
         .title {
             font-size: 28px;
             font-family: 'Brittany', cursive;
             margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left;
         }
         .menu-item {
             display: flex;
@@ -65,28 +70,23 @@
             font-weight: bold;
             color: #d9534f;
         }
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #555;
-        }
-        .contacts {
-            margin-top: 20px;
-            font-size: 16px;
-            text-align: center;
-        }
-        .contacts a {
-            display: block;
-            color: #d9534f;
-            text-decoration: none;
-            margin-top: 5px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">Tut Dessert</div>
         
+        <div class="section-title">Торты</div>
+
+        <div class="menu-item">
+            <img src="mereng.jpg" alt="Меренговый рулет">
+            <div class="menu-info">
+                <h3>Меренговый рулет</h3>
+                <p>Лёгкий бисквит с нежным сливочным кремом</p>
+                <p class="price">5000 ₸/кг</p>
+            </div>
+        </div>
+
         <div class="menu-item">
             <img src="napoleon.jpg" alt="Молочная девочка">
             <div class="menu-info">
@@ -106,7 +106,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Красный бархат">
+            <img src="barhat.jpg" alt="Красный бархат">
             <div class="menu-info">
                 <h3>Красный бархат</h3>
                 <p>Шоколадный бисквит с крем-чизом</p>
@@ -124,7 +124,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Нутелла">
+            <img src="nutella.jpg" alt="Нутелла">
             <div class="menu-info">
                 <h3>Нутелла</h3>
                 <p>Шоколадный бисквит с кремом из Нутеллы и взбитых сливок</p>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Вуппи пай">
+            <img src="vuppi.jpg" alt="Вуппи пай">
             <div class="menu-info">
                 <h3>Вуппи пай</h3>
                 <p>Шоколадный мини-бисквит с нежным крем-чизом</p>
@@ -142,7 +142,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Сникерс">
+            <img src="snikers.jpg" alt="Сникерс">
             <div class="menu-info">
                 <h3>Сникерс</h3>
                 <p>Шоколадный бисквит с карамелью, арахисом и кремом на основе варёной сгущёнки</p>
@@ -151,7 +151,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Шоко-карамель">
+            <img src="shoko.jpg" alt="Шоко-карамель">
             <div class="menu-info">
                 <h3>Шоко-карамель</h3>
                 <p>Шоколадный бисквит с нежным карамельным кремом</p>
@@ -160,7 +160,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Морковный">
+            <img src="morkov.jpg" alt="Морковный">
             <div class="menu-info">
                 <h3>Морковный</h3>
                 <p>Ароматный пряный бисквит с крем-чизом</p>
@@ -169,25 +169,88 @@
         </div>
 
         <div class="menu-item">
-            <img src="redvelvet.jpg" alt="Орео-кейк">
+            <img src="oreo.jpg" alt="Орео-кейк">
             <div class="menu-info">
                 <h3>Орео-кейк</h3>
                 <p>Шоколадный бисквит с кремом и хрустящей крошкой Oreo</p>
                 <p class="price">6500 ₸/кг</p>
             </div>
         </div>
-
-
-        <div class="footer">Оформление торта оплачивается отдельно, цена зависит от сложности декора 😊</div>
         
-        <div class="contacts">
-            <p>Для заказа звоните:</p>
-            <a href="tel:+77001234567">+7 700 123 45 67</a>
-            <p>Пишите в WhatsApp:</p>
-            <a href="https://wa.me/77001234567" target="_blank">WhatsApp</a>
-            <p>Следите за нами в Instagram:</p>
-            <a href="https://www.instagram.com/tut_dessert" target="_blank">Instagram</a>
+        <div class="section-title">Пирожные</div>
+        <div class="menu-item">
+            <img src="eastern_pie.jpg" alt="Восточный пирог">
+            <div class="menu-info">
+                <h3>Восточный пирог</h3>
+                <p class="price">2800/4000 ₸</p>
+            </div>
         </div>
+        <div class="menu-item">
+            <img src="cheese_pie.jpg" alt="Творожный пирог">
+            <div class="menu-info">
+                <h3>Творожный пирог</h3>
+                <p class="price">2800/4000 ₸</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="banoffee.jpg" alt="Банофи пай">
+            <div class="menu-info">
+                <h3>Банофи пай</h3>
+                <p class="price">2800/4000 ₸</p>
+            </div>
+        </div>
+        
+        <div class="section-title">Булочки</div>
+        <div class="menu-item">
+            <img src="tartaletki.jpg" alt="Тарталетки">
+            <div class="menu-info">
+                <h3>Тарталетки</h3>
+                <p>Песочная основа, творожная начинка, безе</p>
+                <p class="price">400 ₸</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="korzinka.jpg" alt="Творожные корзиночкой ">
+            <div class="menu-info">
+                <h3>Творожные корзиночкой </h3>
+                <p>Песочная основа, творожная начинка, безе</p>
+                <p class="price">400 ₸</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="thonmomo.jpg" alt="Тхонмомо">
+            <div class="menu-info">
+                <h3>Тхонмомо</h3>
+                <p class="price">300 ₸</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="tubes.jpg" alt="Трубочки">
+            <div class="menu-info">
+                <h3>Трубочки</h3>
+                <p class="price">180 ₸</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="sochniki.jpg" alt="Сочники">
+            <div class="menu-info">
+                <h3>Сочники</h3>
+                <p class="price">200 ₸</p>
+            </div>
+        </div>
+
+    <div class="footer">Оформление торта оплачивается отдельно, цена зависит от сложности декора 😊</div>
+        
+    <div class="contacts">
+        <p>Для заказа звоните:</p>
+        <a href="tel:+77001234567">+7 700 123 45 67</a>
+        <p>Пишите в WhatsApp:</p>
+        <a href="https://wa.me/77001234567" target="_blank">WhatsApp</a>
+        <p>Следите за нами в Instagram:</p>
+        <a href="https://www.instagram.com/tut_dessert" target="_blank">Instagram</a>
     </div>
+</div>
 </body>
 </html>
