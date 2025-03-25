@@ -4,28 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Меню Кондитерской</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sensei&family=Brittany&display=swap');
+
         body {
             font-family: 'Sensei', sans-serif;
-            background: url('background.jpg') no-repeat center center;
+            background: url('images/background.jpg') no-repeat center center;
             background-size: cover;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            overflow: auto;
             min-height: 100vh;
         }
+
         .container {
             width: 90%;
             max-width: 500px;
-            background: url('container-background.jpg') no-repeat center;
+            background: url('images/container-background.jpg') no-repeat center;
             background-size: cover;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .pink-button {
+            background-color: #ff85a2;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .pink-button:hover {
+            background-color: #ff6080;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
             text-align: center;
         }
         .title {
@@ -79,7 +114,7 @@
         <div class="section-title">Торты</div>
 
         <div class="menu-item">
-            <img src="bento.jpg" alt="Бенто-торт" class="zoomable" width="150">
+            <img src="images/bento.jpg" alt="Бенто-торт" class="zoomable" width="150">
             
             <div class="menu-info">
                 <h3>Бенто-торт</h3>
@@ -89,7 +124,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="mereng.jpg" alt="" class="zoomable" width="150">
+            <img src="images/mereng.jpg" alt="" class="zoomable" width="150">
             
             <div class="menu-info">
                 <h3>Меренговый рулет</h3>
@@ -99,7 +134,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="dev.jpg" alt="" class="zoomable" width="150">
+            <img src="images/dev.jpg" alt="" class="zoomable" width="150">
             
             <div class="menu-info">
                 <h3>Молочная девочка</h3>
@@ -109,7 +144,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="honey.jpg" alt="" class="zoomable" width="150">
+            <img src="images/honey.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Медовый</h3>
                 <p>Классический торт с ароматным мёдом</p>
@@ -118,7 +153,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="barhat.jpg" alt="" class="zoomable" width="150">
+            <img src="images/barhat.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Красный бархат</h3>
                 <p>Шоколадный бисквит с крем-чизом</p>
@@ -127,7 +162,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="pistachio.jpg" alt="" class="zoomable" width="150">
+            <img src="images/pistachio.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Фисташковый</h3>
                 <p>Ореховый бисквит с фисташковым кремом</p>
@@ -136,7 +171,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="nutella.jpg" alt="" class="zoomable" width="150">
+            <img src="images/nutella.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Нутелла</h3>
                 <p>Шоколадный бисквит, крем чиз с нутеллой</p>
@@ -145,7 +180,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="vuppi.jpg" alt="" class="zoomable" width="150">
+            <img src="images/vuppi.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Вуппи пай</h3>
                 <p>Шоколадный мини-бисквит с нежным крем-чизом</p>
@@ -154,7 +189,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="snikers.jpg" alt="" class="zoomable" width="150">
+            <img src="images/snikers.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Сникерс</h3>
                 <p>Шоколадный бисквит с карамелью, арахисом и кремом на основе варёной сгущёнки</p>
@@ -163,7 +198,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="shoko.jpg" alt="" class="zoomable" width="150">
+            <img src="images/shoko.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Шоко-карамель</h3>
                 <p>Шоколадный бисквит с нежным карамельным кремом</p>
@@ -172,7 +207,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="morkov.jpg" alt="" class="zoomable" width="150">
+            <img src="images/morkov.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Морковный</h3>
                 <p>Ароматный пряный бисквит с крем-чизом</p>
@@ -181,7 +216,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="oreo.jpg" alt="" class="zoomable" width="150">
+            <img src="images/oreo.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Орео-кейк</h3>
                 <p>Шоколадный бисквит, крем чиз, чизкейк с кусочками орео на прослойке</p>
@@ -191,21 +226,21 @@
         
         <div class="section-title">Пироги</div>
         <div class="menu-item">
-            <img src="eastern_pie.jpg" alt="" class="zoomable" width="150">
+            <img src="images/eastern_pie.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Восточный пирог</h3>
                 <p class="price">2800/4000 ₸</p>
             </div>
         </div>
         <div class="menu-item">
-            <img src="cheese_pie.jpg" alt="" class="zoomable" width="150">
+            <img src="images/cheese_pie.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Творожный пирог</h3>
                 <p class="price">2800/4000 ₸</p>
             </div>
         </div>
         <div class="menu-item">
-            <img src="banoffee.jpg" alt="" class="zoomable" width="150">
+            <img src="images/banoffee.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Банофи пай</h3>
                 <p class="price">2800/4000 ₸</p>
@@ -213,7 +248,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="mac.jpg" alt="" class="zoomable" width="150">
+            <img src="images/mac.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Маковый пирог</h3>
                 <p class="price">5000 ₸</p>
@@ -223,7 +258,7 @@
         <div class="section-title">Пирожные</div>
 
         <div class="menu-item">
-            <img src="bulka.jpg" alt="" class="zoomable" width="150">
+            <img src="images/bulka.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Булочки</h3>
                 <p>С творогом, со сгущенкой, с повидлой, пустышки</p>
@@ -232,7 +267,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="tubes.jpg" alt="" class="zoomable" width="150">
+            <img src="images/tubes.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Трубочки</h3>
                 <p class="price">180 ₸</p>
@@ -240,7 +275,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="samsa.jpg" alt="" class="zoomable" width="150">
+            <img src="images/samsa.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Самса</h3>
                 <p>Слоенное тесто, рубленная мясная начинка</p>
@@ -249,7 +284,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="sochniki.jpg" alt="" class="zoomable" width="150">
+            <img src="images/sochniki.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Сочники</h3>
                 <p class="price">200 ₸</p>
@@ -257,7 +292,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="cupcakes.jpg" alt="" class="zoomable" width="150">
+            <img src="images/cupcakes.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Капкейки</h3>
                 <p>Бисквит шоколадный, ванильный, красный бархат Крем:чиз</p>
@@ -266,7 +301,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="profitroli.jpg" alt="" class="zoomable" width="150">
+            <img src="images/profitroli.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Профитроли</h3>
                 <p>Заварное тесто, крем пломбир</p>
@@ -275,7 +310,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="pavlova.jpg" alt="" class="zoomable" width="150">
+            <img src="images/pavlova.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Анна Павлова</h3>
                 <p>Легкое воздушное безе с ягодным конфитюром и кремом чиз</p>
@@ -284,7 +319,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="thomomo.jpg" alt="" class="zoomable" width="150">
+            <img src="images/thomomo.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Тхонмомо</h3>
                 <p class="price">300 ₸</p>
@@ -292,7 +327,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="tartaletki.jpg" alt="" class="zoomable" width="150">
+            <img src="images/tartaletki.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Тарталетки</h3>
                 <p>Песочная основа, крем пломбир, свежие ягоды</p>
@@ -301,7 +336,7 @@
         </div>
 
         <div class="menu-item">
-            <img src="korzinka.jpg" alt="" class="zoomable" width="150">
+            <img src="images/korzinka.jpg" alt="" class="zoomable" width="150">
             <div class="menu-info">
                 <h3>Творожные корзиночкой </h3>
                 <p>Песочная основа, творожная начинка, безе</p>
@@ -309,17 +344,20 @@
             </div>
         </div>
 
-    <div class="footer">Оформление торта оплачивается отдельно, цена зависит от сложности декора 😊</div>
+    </style>
+
+        <p>Выберите удобный способ связи:</p>
+
+        <div class="button-container">
+            <a href="https://wa.me/77472260976" target="_blank" class="pink-button">WhatsApp</a>
+            <a href="https://www.instagram.com/tut__dessert" target="_blank" class="pink-button">Instagram</a>
+            <a href="tel:+77472260976" class="pink-button">Позвонить</a>
+        </div>
         
-    <div class="contacts">
-        <p>Для заказа звоните:</p>
-        <a href="tel:+77001234567">+7 747 226 0976</a>
-        <p>Пишите в <a href="https://wa.me/77472260976" target="_blank">WhatsApp</a>.</p>
-        <p>Следите за нами в <a href="https://www.instagram.com/tut__dessert" target="_blank">Instagram</a>.</p>
-
-
+        <div class="footer">Оформление торта оплачивается отдельно, цена зависит от сложности декора 😊</div>
     </div>
 </div>
+
 <script src="gallery.js"></script>
 
 </body>
